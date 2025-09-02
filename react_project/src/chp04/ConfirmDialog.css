@@ -1,0 +1,20 @@
+div{
+    text-align: center;
+    padding: 20px;
+    sidth: 300px;
+}
+
+.div-bg-ivory{
+    background-color: #fdfdf3;
+    border: 4px outset #d2c8ed;
+}
+
+.div-bg-yellow{
+    background-color: #FAFAD2;
+    border: 4px outset #d2c8ed;
+}
+
+.div-bg-khaki{
+    background-color: #F0E68C;
+    border: 4px outset #d2c8ed;
+}
