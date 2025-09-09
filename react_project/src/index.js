@@ -3,23 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import './chp04/Clock';
-import Clock from "./chp04/Clock";
 import './chp04/Clock.css';
-import Comment from "./chp05/exam01/Comment";
+import BookList from "./chp05/exam02/BookList";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-// setInterval(()=>{
-//     root.render(
-//         <React.StrictMode>
-//             <Clock />
-//         </React.StrictMode>
-//     )
-// })
 root.render(
   <React.StrictMode>
-      <Comment />
+      <BookList />
   </React.StrictMode>
 );
 
