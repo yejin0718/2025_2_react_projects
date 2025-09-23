@@ -4,14 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import './chp04/Clock';
 import './chp04/Clock.css';
-import Counter from './chp07/exam01/Counter'
+import Accomodate from "./chp07/Accomodate";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-      <Counter />
+      <Accomodate />
   </React.StrictMode>
 );
 
