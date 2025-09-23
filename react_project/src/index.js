@@ -4,14 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import './chp04/Clock';
 import './chp04/Clock.css';
-import CommentList from "./chp05/exam03/CommentList";
+import Counter from './chp07/exam01/Counter'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-      <CommentList />
+      <Counter />
   </React.StrictMode>
 );
 
