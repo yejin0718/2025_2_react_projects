@@ -4,14 +4,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import './chp04/Clock';
 import './chp04/Clock.css';
-import Accomodate from "./chp07/Accomodate";
+import InputTest from "./chp08/InputTest";
+import ConfirmButtonFunction from "./chp08/ConfirmButtonFunction";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-      <Accomodate />
+      <ConfirmButtonFunction />
   </React.StrictMode>
 );
 
