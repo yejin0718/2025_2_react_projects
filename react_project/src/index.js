@@ -4,18 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import './chp04/Clock';
 import './chp04/Clock.css';
-import InputTest from "./chp08/InputTest";
-import Greeting from "./chp09/ex1/Greeting"
-import LogInControl from "./chp09/ex2/LogInControl";
-import MainPageWarning from "./chp09/ex3/MainPageWarning";
-import LandingPage from "./chp09/closing_ex/LandingPage";
+import Accomodate from "./chp07/Accomodate";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-      <LandingPage />
+      <Accomodate />
   </React.StrictMode>
 );
 
