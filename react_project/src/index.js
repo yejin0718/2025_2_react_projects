@@ -4,14 +4,15 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import './chp04/Clock';
 import './chp04/Clock.css';
-import Accomodate from "./chp07/Accomodate";
+import MovieCard from "./chp10/ex4/MovieCard";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-      <Accomodate />
+      {/*<Sky />*/}
+      <MovieCard />
   </React.StrictMode>
 );
 

@@ -11,7 +11,7 @@ function Counter() {
         return ()=>{
 
         }
-    }, []);
+    }, [count]);
     return(
         <div>
             <p>총 {count}번 클릭했습니다.</p>
