@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import './chp04/Clock';
 import './chp04/Clock.css';
 import MovieCard from "./chp10/ex4/MovieCard";
+import Sky from "./chp10/ex4/Sky";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

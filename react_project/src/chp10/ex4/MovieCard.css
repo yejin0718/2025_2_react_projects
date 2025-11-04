@@ -1,16 +1,21 @@
+/* 전체 배경 */
 .movie-container {
     text-align: center;
-    background-color: #f7f9fc;
+    background-color: #0c0f1b; /* 어두운 극장 느낌 */
     min-height: 100vh;
     padding: 40px 20px;
     font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    color: #fff;
+    background-image: radial-gradient(circle at top, #1a2035, #0c0f1b 80%);
 }
 
 /* 제목 */
 .movie-title {
-    font-size: 28px;
-    color: #2b3a67;
-    margin-bottom: 10px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffcc00; /* 포인트 네온 노란색 */
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
+    margin-bottom: 30px;
 }
 
 /* 영화 카드 리스트 */
@@ -18,49 +23,73 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 25px;
 }
 
 /* 개별 카드 */
 .movie-card {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1b2238;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
     overflow: hidden;
-    width: 180px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
 }
 
+/* 카드 호버 시 영화관 조명 효과 */
 .movie-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.4), 0 0 40px rgba(255, 102, 0, 0.2);
 }
 
+/* 포스터 */
 .movie-poster {
     width: 100%;
-    height: 250px;
+    height: 280px;
     object-fit: cover;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* 영화 정보 텍스트 */
+/* 영화 정보 */
 .movie-info {
-    padding: 10px;
+    padding: 12px;
+    background: rgba(10, 15, 30, 0.85);
 }
 
 .movie-name {
-    font-size: 16px;
-    color: #2b3a67;
-    margin: 8px 0 4px;
+    font-size: 17px;
+    color: #ffffff;
+    margin: 6px 0 4px;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.3);
 }
 
 .movie-genre {
     font-size: 14px;
-    color: #6a7b9d;
+    color: #d1d1e0;
 }
 
 /* 푸터 */
 .movie-footer {
     margin-top: 40px;
-    color: #2b3a67;
+    color: #ffcc00;
     font-weight: bold;
+    text-shadow: 0 0 8px #ffcc00;
+}
+
+/* 반짝이는 효과 (네온 flicker 느낌) */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+                0 0 10px #ffcc00,
+                0 0 20px #ffcc00,
+                0 0 30px #ff9900;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
+
+.movie-title {
+    animation: flicker 3s infinite;
 }
