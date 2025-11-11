@@ -2,10 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import './chp04/Clock';
-import './chp04/Clock.css';
-import MovieCard from "./chp10/ex4/MovieCard";
-import Sky from "./chp10/ex4/Sky";
+import ConfirmBoilVerdict from "./chp12/ex01/ConfirmBoilVerdict";
 
 
 
@@ -13,8 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-      {/*<Sky />*/}
-      <MovieCard />
+      <ConfirmBoilVerdict />
   </React.StrictMode>
 );
 

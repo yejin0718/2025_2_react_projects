@@ -1,0 +1,132 @@
+/* 💜 페이지 전체 스타일 */
+body {
+    background: linear-gradient(135deg, #e3f0ff, #f5e6ff);
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* 💧 fieldset 카드 스타일 */
+fieldset {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid #c7b8ff;
+    border-radius: 16px;
+    padding: 25px 40px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(150, 120, 255, 0.2);
+    animation: popIn 0.8s ease;
+}
+
+/* 🪄 제목 */
+legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #7b68ee;
+    padding: 0 10px;
+    text-shadow: 1px 1px 3px rgba(180, 150, 255, 0.3);
+}
+
+/* 🌡️ 입력창 */
+input {
+    margin-top: 12px;
+    padding: 8px 12px;
+    border: 2px solid #b8d8ff;
+    border-radius: 10px;
+    background-color: #f8faff;
+    font-size: 1rem;
+    width: 80%;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #c7b8ff;
+    box-shadow: 0 0 8px rgba(150, 120, 255, 0.4);
+}
+
+/* 🔥 끓는 여부 문장 */
+p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #604baf;
+    animation: fadeIn 1s ease;
+}
+
+/* 💭 버블 애니메이션 */
+.bubble {
+    position: absolute;
+    bottom: 10px;
+    background: rgba(180, 200, 255, 0.5);
+    border-radius: 50%;
+    animation: floatUp 6s infinite ease-in;
+    opacity: 0.6;
+}
+
+.bubble:nth-child(1) {
+    width: 10px;
+    height: 10px;
+    left: 30%;
+    animation-delay: 0s;
+}
+.bubble:nth-child(2) {
+    width: 14px;
+    height: 14px;
+    left: 60%;
+    animation-delay: 1.5s;
+}
+.bubble:nth-child(3) {
+    width: 8px;
+    height: 8px;
+    left: 45%;
+    animation-delay: 3s;
+}
+.bubble:nth-child(4) {
+    width: 12px;
+    height: 12px;
+    left: 75%;
+    animation-delay: 4.5s;
+}
+
+/* ✨ 애니메이션 정의 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0.7;
+    }
+    80% {
+        opacity: 0.9;
+    }
+    100% {
+        transform: translateY(-150px);
+        opacity: 0;
+    }
+}

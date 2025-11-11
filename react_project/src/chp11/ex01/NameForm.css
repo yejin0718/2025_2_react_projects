@@ -1,0 +1,85 @@
+/* 박스 크기 계산 통일 (넘침 방지) */
+* {
+    box-sizing: border-box;
+}
+
+/* 폼 전체 레이아웃 */
+form {
+    width: 340px;
+    margin: 100px auto;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+/* 라벨 공통 스타일 */
+label {
+    display: block;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* input & textarea 공통 스타일 */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: none; /* textarea 크기 조절 비활성화 */
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+/* textarea 전용 스타일 */
+textarea {
+    min-height: 80px;
+    line-height: 1.5;
+}
+
+/* 포커스 시 강조 효과 */
+input:focus,
+textarea:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.3);
+}
+
+/* 버튼 */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 버튼 hover 시 */
+button[type="submit"]:hover {
+    background-color: #3c7ed6;
+    transform: translateY(-2px);
+}
+
+/* 버튼 active 시 */
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* 반응형 대응 */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}

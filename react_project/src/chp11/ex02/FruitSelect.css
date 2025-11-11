@@ -1,0 +1,84 @@
+/* 공통 박스 계산 */
+* {
+    box-sizing: border-box;
+}
+
+/* 폼 전체 카드 */
+form {
+    width: 320px;
+    margin: 100px auto;
+    padding: 30px 25px;
+    background-color: #fffef8;
+    border-radius: 18px;
+    box-shadow: 0 4px 20px rgba(255, 180, 0, 0.15);
+    text-align: center;
+    font-family: "Pretendard", "Noto Sans KR", sans-serif;
+}
+
+/* 라벨 텍스트 */
+label {
+    display: block;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* select 박스 스타일 */
+select {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    border: 2px solid #ffd45e;
+    border-radius: 10px;
+    background-color: #fff8e1;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* hover 시 과일 색 포인트 */
+select:hover {
+    border-color: #ffb347;
+    background-color: #fff3d0;
+}
+
+/* focus 시 강조 */
+select:focus {
+    box-shadow: 0 0 8px rgba(255, 179, 71, 0.4);
+}
+
+/* 버튼 */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #ffb347;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 버튼 hover 시 */
+button[type="submit"]:hover {
+    background-color: #ffa931;
+    transform: translateY(-2px);
+}
+
+/* 버튼 active 시 */
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+/* 반응형 */
+@media (max-width: 400px) {
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
