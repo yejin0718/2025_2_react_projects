@@ -1,0 +1,56 @@
+/* 전체 Calculator를 감싸는 div 스타일 */
+div {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: "Pretendard", sans-serif;
+}
+
+/* TemperatureInput fieldset */
+fieldset {
+    border: 2px solid #4b9fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* legend */
+legend {
+    padding: 0 8px;
+    font-size: 14px;
+    color: #1a73e8;
+    font-weight: bold;
+}
+
+/* input */
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1.5px solid #8bb7ff;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.2s;
+}
+
+input:focus {
+    border-color: #1a73e8;
+}
+
+/* verdict 텍스트 */
+p {
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    background: #f0f4ff;
+    color: #333;
+}
+
+/* 물 끓는 조건 — JS 동적 className 없이 하려면 여기서는 불가 */

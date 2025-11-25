@@ -1,4 +1,5 @@
 import React from "react";
+import "../Calculator.css"
 
 function BoilVerdict(props) {
     if(props.celcius >= 100)
