@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import DistanceConverter from "./chp12/ex02/DistanceConverter";
+import WelcomeDialog from "./chp13/WelcomeDialog";
 
 
 
@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
-      <DistanceConverter />
+      <WelcomeDialog />
   </React.StrictMode>
 );
 

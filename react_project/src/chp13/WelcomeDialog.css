@@ -1,0 +1,57 @@
+/* 전체 Dialog 영역을 위아래로 여백 */
+.Dialog-title {
+    margin: 0;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.Dialog-message {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* Dialog 3개가 겹치지 않도록 간격 */
+.Dialog-container {
+    margin-bottom: 20px;
+}
+
+/* ★ 파스텔톤 FancyBorder 색상 정의 ★ */
+
+/* Pastel blue */
+.FancyBorder-FancyBorder-blue {
+    border: 3px solid #A7C7E7;
+    background-color: #E8F3FF;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+/* Pastel yellow */
+.FancyBorder-FancyBorder-yellow {
+    border: 3px solid #F9E79F;
+    background-color: #FEF9E7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+/* Pastel purple */
+.FancyBorder-FancyBorder-purple {
+    border: 3px solid #D7BDE2;
+    background-color: #F5EEF8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+/* 전체 레이아웃 가볍게 가운데 정렬하고 패딩 주기 */
+.WelcomeDialog-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
