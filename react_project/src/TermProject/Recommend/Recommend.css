@@ -1,0 +1,34 @@
+.recommend-container {
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #f7f8fa;
+    min-height: 580px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+.recommend-page main {
+    height: 579px;
+    width: 900px;
+    background-color: #f7f8fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.spin-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #1f7a1f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.spin-btn:hover {
+    background-color: #145c14;
+}
