@@ -1,14 +1,28 @@
 import React from "react";
 import "./Header.css";
 
-function Header() {
+function Header(props) {
     return (
         <header className="header">
             <h1>맛집상자</h1>
             <nav>
                 <ul>
-                    <li><a href="#" className="active">맛집소개</a></li>
-                    <li><a href="#">추천메뉴</a></li>
+                    <li>
+                        <a
+                        href="/introduce"
+                        className={props.activePage === "introduce" ? "active" : ""}
+                        >
+                            맛집소개
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="/recommend"
+                            className={props.activePage === "recommend" ? "active" : ""}
+                        >
+                            추천메뉴
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>

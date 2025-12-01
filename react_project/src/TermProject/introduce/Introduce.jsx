@@ -20,7 +20,7 @@ function Introduce() {
 
     return (
         <div className="introduce-page">
-            <Header />
+            <Header activePage={"introduce"} />
 
             <div className="intro-container">
                 <div className="map-and-filter">

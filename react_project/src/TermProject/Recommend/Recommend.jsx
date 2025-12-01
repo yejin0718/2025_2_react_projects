@@ -31,7 +31,7 @@ function Recommend() {
 
     return (
         <div className="recommend-page">
-            <Header />
+            <Header activePage={"recommend"} />
 
             <main>
                 <h2>오늘 뭐 먹지?</h2>
