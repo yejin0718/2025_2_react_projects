@@ -1,0 +1,8 @@
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    background-color: #f7f8fa;
+}

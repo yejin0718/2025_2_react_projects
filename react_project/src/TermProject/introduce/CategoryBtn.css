@@ -1,0 +1,44 @@
+/* 기본 회색 버튼 */
+.filter-btn {
+    background-color: #e0e0e0;
+    color: #555;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* hover */
+.filter-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+.filter-btn[data-category="korean"] {
+    background-color: #B5EAD7;
+    color: #007B3E;
+}
+
+.filter-btn[data-category="western"] {
+    background-color: #FFDAC1;
+    color: #C85C2E;
+}
+
+.filter-btn[data-category="chinese"] {
+    background-color: #FF9AA2;
+    color: #B02E2E;
+}
+
+.filter-btn[data-category="japanese"] {
+    background-color: #E2F0CB;
+    color: #517C1B;
+}
+
+.filter-btn[data-category="bakery"] {
+    background-color: #FFFACD;
+    color: #9A8500;
+}

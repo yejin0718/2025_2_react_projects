@@ -1,0 +1,30 @@
+.recommend-section {
+    width: 260px;
+    height: 380px;
+    background-color: #2f5939;
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* JS로 추가되는 DOM에도 적용되도록 전역 선택자로 변경 */
+.recommend-section .food-box {
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.recommend-section .food-box img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.recommend-section .food-box p {
+    margin: 6px 0 0 0;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #333;
+    text-align: center;   /* ← 예진님이 원하는 중앙정렬 */
+    word-break: keep-all;
+}
